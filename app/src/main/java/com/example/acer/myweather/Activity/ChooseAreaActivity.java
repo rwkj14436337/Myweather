@@ -26,11 +26,8 @@ import com.example.acer.myweather.Util.Utility;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by acer on 2017/6/15.
- */
+public class ChooseAreaActivity extends AppCompatActivity {
 
-public class ChooseAreaActivity extends AppCompatActivity{
     // 标记当前列表为省份
     public static final int LEVEL_PROVINCE = 0;
     // 标记当前列表为城市
@@ -78,11 +75,11 @@ public class ChooseAreaActivity extends AppCompatActivity{
             finish();
             return;
         }
-        setContentView(R.layout.ChooseAreaActivity);
+        setContentView(R.layout.activity_choose_area);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        listView = (ListView) findViewById(R.id.list_view);
+        listView = (ListView) findViewById(R.id.listView);
         titleText = (TextView) findViewById(R.id.title);
         dataList = new ArrayList<>();
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataList);

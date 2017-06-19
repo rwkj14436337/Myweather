@@ -17,6 +17,7 @@ import java.util.List;
  */
 
 public class WeatherAdapter extends ArrayAdapter<HourlyWeather> {
+
     private int resourceId;
 
     private Context context;

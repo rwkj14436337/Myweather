@@ -59,7 +59,7 @@ public class WeatherActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.weather_layout);
+        setContentView(R.layout.weather);
 
         switch_city_button = (Button) findViewById(R.id.switch_city);
         refresh_weather_button = (Button) findViewById(R.id.refresh_weather);
